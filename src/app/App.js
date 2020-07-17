@@ -1,13 +1,19 @@
-
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
+
+import Footer from "./layout/Footer";
+import Navbar from "./layout/NavBar";
 import './app.css';
 
 const App = () => {
-    return(
-      <div>
-        <h1> This is A Bare Bones React App</h1>
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <div className="bodyContainer">
       </div>
-    );
+      <Footer />
+    </BrowserRouter>
+  );
 }
 
 export default App;

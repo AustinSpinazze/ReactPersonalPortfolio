@@ -1,0 +1,35 @@
+.footerList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.footerLinkImage{
+  max-height: 35px;
+  filter: invert(100%);
+}
+
+.footerLinkItem {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 3px 16px 3px 16px;
+  text-decoration: none;
+  font-size: large;
+}
+
+.footerLinkItem:hover {
+  color: #EAE7DC;
+}
+
+.footerListLinkItem {
+  display: inline-block;
+  margin-top: 10px;
+  /* border-right: 1px solid white; */
+}
+
+/* .footerListLinkItem:last-child {
+  border-right: none;
+} */
