@@ -6,6 +6,11 @@
   text-align: center;
 }
 
+.footerLinkImage{
+  max-height: 35px;
+  filter: invert(100%);
+}
+
 .footerLinkItem {
   display: block;
   color: white;
@@ -22,9 +27,9 @@
 .footerListLinkItem {
   display: inline-block;
   margin-top: 10px;
-  border-right: 1px solid white;
+  /* border-right: 1px solid white; */
 }
 
-.footerListLinkItem:last-child {
+/* .footerListLinkItem:last-child {
   border-right: none;
-}
+} */

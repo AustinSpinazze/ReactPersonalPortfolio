@@ -6,6 +6,7 @@ import "./navBar.css";
 const NavBar = () => {
     return (
         <div className="navBar">
+            <img src={"/images/logoTransparent.png"} alt="Logo" className="logo"/>
             <NavLinks />
         </div>
     )
