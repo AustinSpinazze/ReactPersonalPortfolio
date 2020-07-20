@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: "./src/index.js", 
@@ -15,12 +16,12 @@ module.exports = {
                 use: ["style-loader", "css-loader"]
             },
             {
-                test: /\.(svg|png|jpe?g|gif)$/i,
+                test: /\.(svg|png|jpe?g|gif)$/,
                 use: [
                   {
                     loader: 'file-loader',
                     options:{
-                        name: '[path][name].[ext]'
+                        name: 'images/[name].[ext]'
                     }
                   },
                 ],
@@ -29,12 +30,19 @@ module.exports = {
     },
     resolve: {extensions: ["*", ".js", ".jsx"]},
     output:{
-        filename: "bundle.js"
+        filename: "bundle.js",
+        chunkFilename: '[id].js',
+        path: path.resolve(__dirname, 'dist'),
     },
     devServer: {
-        contentBase: path.join(__dirname, "public"),
         historyApiFallback: true, 
-        port:3000,
-        publicPath:'http://localhost:3000/dist/'
-    }
+        port:3000
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: __dirname + '/src/index.html',
+            filename: 'index.html',
+            inject: 'body'
+        })
+    ]
 };

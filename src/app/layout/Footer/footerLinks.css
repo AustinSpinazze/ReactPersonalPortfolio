@@ -9,6 +9,11 @@
 .footerLinkImage{
   max-height: 35px;
   filter: invert(100%);
+  transition: filter 200ms ease-in-out;
+}
+
+.footerLinkImage:hover {
+  filter: invert(50%);
 }
 
 .footerLinkItem {

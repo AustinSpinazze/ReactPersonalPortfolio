@@ -2,6 +2,7 @@ html, body {
     min-height: 100vh;
     background-color: #EAE7DC;
     position: relative;
+    margin: 0;
 }
 
 .bodyContainer {
