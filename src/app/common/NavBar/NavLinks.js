@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 
+import Button from "../Button";
 import "./navLinks.css";
 
 const NavLinks = () => {
@@ -8,16 +8,16 @@ const NavLinks = () => {
         <div>
             <ul className="navList">
                 <li className="navListLinkItem">
-                    <Link to="/" className="linkItem" exact="true">Home</Link>
+                    <Button path="/" className="navLinkItem" exact="true" type="navLink" name="Home" />
                 </li>
                 <li className="navListLinkItem">
-                    <Link to="/projects" className="linkItem">Projects</Link>
+                    <Button path="/projects" className="navLinkItem" exact="false" type="navLink" name="Projects" />
                 </li>
                 <li className="navListLinkItem">
-                    <Link to="/blog" className="linkItem">Blog</Link>
+                    <Button path="/blog" className="navLinkItem" exact="false" type="navLink" name="Blog" />
                 </li>
                 <li className="navListLinkItem">
-                    <Link to="/contact" className="linkItem">Contact</Link>
+                    <Button path="/contact" className="navLinkItem" exact="false" type="navLink" name="Contact" />
                 </li>
             </ul>
         </div>

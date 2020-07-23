@@ -1,0 +1,13 @@
+.footerList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.footerListLinkItem {
+  display: inline-block;
+  margin-top: 10px;
+}
+

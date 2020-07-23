@@ -1,12 +1,17 @@
-.footerList {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.navLinkItem {
+  display: block;
+  color: white;
   text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: large;
 }
 
-.footerLinkImage{
+.navLinkItem:hover {
+  color: #eae7dc;
+}
+
+.footerLinkImage {
   max-height: 35px;
   filter: invert(100%);
   transition: filter 200ms ease-in-out;
@@ -26,15 +31,9 @@
 }
 
 .footerLinkItem:hover {
-  color: #EAE7DC;
+  color: #eae7dc;
 }
 
-.footerListLinkItem {
-  display: inline-block;
-  margin-top: 10px;
-  /* border-right: 1px solid white; */
+.defaultButton {
+    background-color: #e85a4f;
 }
-
-/* .footerListLinkItem:last-child {
-  border-right: none;
-} */
