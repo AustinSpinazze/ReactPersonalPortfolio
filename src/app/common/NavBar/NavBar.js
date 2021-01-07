@@ -2,7 +2,7 @@ import React from 'react';
 
 import NavLinks from './NavLinks';
 import logo from "../../../../public/images/logoTransparent.png";
-import "./navBar.css";
+import "../../scss/main.scss";
 
 const NavBar = () => {
     return (

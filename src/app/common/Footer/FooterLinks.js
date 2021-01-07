@@ -4,8 +4,8 @@ import Button from "../Button";
 import linkedInLogo from "../../../../public/images/linkedinOutline100.png";
 import githubLogo from "../../../../public/images/githubOutline100.png";
 import instagramLogo from "../../../../public/images/instagramOutline100.png"
-import { GITHUB, INSTAGRAM, LINKEDIN } from "../../../shared/constants/constants";
-import "./footerLinks.css";
+import { GITHUB, INSTAGRAM, LINKEDIN } from "../../../shared/constants/urls";
+import "../../scss/main.scss";
 
 const FooterLinks = () => {
     return (
@@ -26,5 +26,3 @@ const FooterLinks = () => {
 }
 
 export default FooterLinks;
-
-//Use Adobe XD to learn about styling
