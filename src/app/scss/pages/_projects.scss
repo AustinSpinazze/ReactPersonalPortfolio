@@ -1,0 +1,10 @@
+.grid {
+    width: 60%; 
+    margin: 0 0 0 24.8%;
+}
+
+@media only screen and (max-width: 1700px) {
+    .grid {
+        margin: 0 0 0 28%;
+    }
+}

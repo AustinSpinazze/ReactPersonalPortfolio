@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Button from "../Button";
-import "./navLinks.css";
+import "../../scss/main.scss";
 
 const NavLinks = () => {
     return (

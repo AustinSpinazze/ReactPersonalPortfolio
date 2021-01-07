@@ -2,13 +2,10 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 import {NAV_LINK, IMAGE_LINK} from "../../shared/constants/constants";
-import "./button.css";
+import "../scss/main.scss";
 
 const Button = props => {
     const eventHandler = (e) => {
-        console.log(e.target.value);
-        // other code
-        // onClick is the function that is passed from the parent component
         props?.onClick?.(e);
     }
 
@@ -27,7 +24,7 @@ const Button = props => {
 
         default:
             return (
-                <input type="button" className={props.className || "defaultButton"} onClick={eventHandler} value={props.name}/> 
+                <input type="button" className={props.className || "defaultButton defaultButton-color defaultButton-animated"} onClick={eventHandler} value={props.name}/> 
             );
     }
 }
