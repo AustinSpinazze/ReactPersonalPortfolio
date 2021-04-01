@@ -1,20 +1,20 @@
 import React, { Fragment } from 'react';
 
-import CardFront from './CardFront';
-import CardBack from './CardBack';
-import "../../scss/main.scss";
+import FlipCard from './FlipCard';
 
-const Card = props => {
+const Card = (props) => {
+    const cardType = (type) => {
+        switch (type) {
+            case "flipCard":
+                return <FlipCard project={props.project}/>
+            default:
+                break;
+        }
+    }
+
     return (
         <Fragment>
-            {props.animatedCard ?
-                <div className="card-container">
-                    <div className="card-body">
-                        <CardBack project={props.project}/>
-                        <CardFront project={props.project} />
-                    </div>
-                </div> : null
-            }
+            {cardType(props.cardType)}
         </Fragment>
     )
 }

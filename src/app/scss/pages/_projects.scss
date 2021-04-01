@@ -1,10 +1,17 @@
-.grid {
-    width: 60%; 
-    margin: 0 0 0 24.8%;
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: auto;
+    max-width: 60%;
 }
 
-@media only screen and (max-width: 1700px) {
-    .grid {
-        margin: 0 0 0 28%;
-    }
-}
+// .projects-grid-row {
+//     width: 25%;
+// }
+
+// @media only screen and (max-width: 1700px) {
+//     .grid {
+//         margin: 0 0 0 28%;
+//     }
+// }
