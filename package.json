@@ -8,7 +8,7 @@
     "start": "webpack-dev-server --mode development --hot --open",
     "build": "webpack --mode production"
   },
-  "author": "Caden Cunningham",
+  "author": "Austin Spinazze",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.13.16",
