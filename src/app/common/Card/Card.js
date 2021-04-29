@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 import Button from '../Button/Button';
 import githubLogo from "../../../../public/images/githubOutline100.png"
