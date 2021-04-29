@@ -1,11 +1,11 @@
 import React from 'react';
 
 import FooterLinks from './FooterLinks';
-import "../../scss/main.scss";
+import "./footer.css";
 
 const Footer = () => {
     return (
-        <div className="footerBar">
+        <div className="footer-bar">
             <FooterLinks />
         </div>
     )

@@ -1,0 +1,106 @@
+.footer-link-image {
+  max-height: 35px;
+  filter: invert(100%);
+  transition: filter 200ms ease-in-out;
+}
+
+.footer-link-image:hover {
+  filter: invert(50%);
+}
+
+.footer-link-item {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 3px 16px 3px 16px;
+  text-decoration: none;
+  font-size: large;
+}
+
+.footer-link-item:hover {
+  color: #eae7dc;
+}
+
+.default-button {
+  display: block;
+  border: none;
+  border-radius: 18px;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  min-width: 250px;
+  max-width: 250px;
+  margin: auto auto 10px auto;
+  text-align: center;
+}
+
+.default-button:link,
+.default-button:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.default-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.default-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.default-button-color {
+  background-color: #e85a4f;
+  color: white;
+}
+
+.default-button::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.default-button-white::after {
+  background-color: #fff;
+}
+
+.default-button:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.default-button-animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards; /* Without this button would be visible as it makes the animation go first before the button renders*/
+}
+
+.github-link-item {
+  color: white;
+  font-size: large;
+}
+
+.github-link-item:hover {
+  color: #eae7dc;
+}
+
+.github-link-image {
+  max-height: 35px;
+}
+
+.github-link-image:hover {
+  filter: invert(50%);
+}

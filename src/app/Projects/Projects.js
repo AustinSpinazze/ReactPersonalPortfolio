@@ -1,22 +1,22 @@
 import React, { Fragment } from 'react';
 
-import Card from '../common/Card/Card';
+import Card from '../common/Card';
 import { PROJECTS } from "../../shared/constants/projects";
-import "../scss/main.scss";
+import "./projects.css";
 
 const Projects = () => {
     return (
-        <Fragment>
+        <div className="grid-container">
             <div className="grid">
                 {
                     PROJECTS.map((project, i) => {
                         return (
-                            <Card animatedCard={true} project={project} key={i} />
+                            <Card cardType={"flip"} cardDetails={project} key={i} />
                         )
                     })
                 }
             </div>
-        </Fragment>
+        </div>
     )
 }
 

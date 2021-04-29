@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+
+html, body {
+    min-height: 100vh;
+    background-color: #EAE7DC;
+    position: relative;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.body-container {
+    padding: 25px 25px 100px 25px;
+    min-height: 100vh;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
