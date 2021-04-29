@@ -1,10 +1,13 @@
-import React from 'react';
-import Home from './Home';
+import React, { Fragment, useEffect } from "react";
 
-const index = () => {
-    return (
-        <Home />
-    )
-}
+import Home from "./Home";
+
+const index = (props) => {
+  return (
+    <Home />
+  );
+};
+
+
 
 export default index;

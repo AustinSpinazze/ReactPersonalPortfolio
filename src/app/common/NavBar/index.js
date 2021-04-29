@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import NavBar from './NavBar';
 
 const index = () => {
+    const [toggle, setToggle] = useState(false);
+
+    const showMenu = () => {
+        console.log("hey")
+        setToggle(!toggle);
+    }
+
     return (
-        <NavBar />
+        <NavBar showMenu={showMenu} toggle={toggle}/>
     )
 }
 
