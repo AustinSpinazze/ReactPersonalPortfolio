@@ -24,14 +24,14 @@ module.exports = {
                   {
                     loader: 'file-loader',
                     options:{
-                        name: 'public/images/[name].[ext]'
+                        name: 'images/[name].[ext]'
                     }
                   },
                 ],
               },
         ]
     },
-    resolve: {extensions: ["*", ".js", ".jsx"]},
+    resolve: {extensions: ["*", ".js", ".jsx", ".png"]},
     output:{
         filename: "bundle.js",
         chunkFilename: '[id].js',
