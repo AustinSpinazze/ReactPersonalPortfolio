@@ -1,7 +1,7 @@
-import Covid19 from '../../../public/images/Covid-19-Tracker.png';
 import LDAPConnector from '../../../public/images/ldap-connector.png';
 import AdviceApp from '../../../public/images/react-advice-app-resize.png';
 import MernApp from '../../../public/images/mern-stack-app.png';
+import Covid19 from '../../../public/images/Covid-19-Tracker.png';
 
 export const PROJECTS =
 [
