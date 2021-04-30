@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import { connect } from "react-redux";
 
-import { initialLoad } from "./redux/Home/home.actions";
+import { initialLoad } from "./redux/Main/main.actions";
 import Loader from "./common/Loaders";
 import Footer from "./common/Footer";
 import Navbar from "./common/NavBar";
