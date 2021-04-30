@@ -11,8 +11,6 @@ import Projects from "./Projects";
 import "./App.css";
 
 const App = (props) => {
-  console.log(props.firstLoad);
-
   useEffect(() => {
     setTimeout(props.initialLoad, 2500);
   }, []);
@@ -21,7 +19,7 @@ const App = (props) => {
     <BrowserRouter>
       {props.firstLoad ? (
         <div className="loader">
-          <Loader loader={"main"}/>
+          <Loader loader={"main"} />
         </div>
       ) : (
         <Fragment>
@@ -39,7 +37,7 @@ const App = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    firstLoad: state.home.firstLoad,
+    firstLoad: state.main.firstLoad,
   };
 };
 

@@ -23,7 +23,6 @@ header::after {
   right: 0%;
   background: #8e8d8a;
   clip-path: circle(0px at top right);
-  transition: clip-path ease-in-out 700ms;
   z-index: 1;
 }
 
@@ -77,7 +76,7 @@ header::after {
 }
 
 .hamburger {
-	margin-top: 5px;
+  margin-top: 5px;
 }
 
 .hamburger,

@@ -1,16 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import Card from './Card';
+import Card from "./Card";
 
 const index = (props) => {
-    const openProject = () => {
-        console.log("hi")
-        window.open(props.cardDetails.linkToProject);
-    }
+  const openProject = () => {
+    window.open(props.cardDetails.linkToProject);
+  };
 
-    return (
-        <Card cardType={props.cardType} cardDetails={props.cardDetails} openProject={openProject}/>
-    );
+  return (
+    <Card
+      cardType={props.cardType}
+      cardDetails={props.cardDetails}
+      openProject={openProject}
+    />
+  );
 };
 
 export default index;

@@ -1,6 +1,5 @@
 import React from "react";
 
-import Loader from "../common/Loaders";
 import "./home.css";
 
 const Home = () => {

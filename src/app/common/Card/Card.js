@@ -1,7 +1,7 @@
 import React from "react";
 
-import Button from '../Button/Button';
-import githubLogo from "../../../../public/images/githubOutline100.png"
+import Button from "../Button/Button";
+import githubLogo from "../../../../public/images/githubOutline100.png";
 import "./card.css";
 
 const Card = (props) => {
@@ -13,7 +13,10 @@ const Card = (props) => {
             <div className="flip-card-front">
               <h1>{props.cardDetails.title}</h1>
               {props.cardDetails.image ? (
-                <img className="flip-card-header-img" src={props.cardDetails.image} />
+                <img
+                  className="flip-card-header-img"
+                  src={props.cardDetails.image}
+                />
               ) : null}
               <ul className="flip-card-technologies">
                 {props.cardDetails.technologies.map((technology, i) => {
@@ -26,11 +29,15 @@ const Card = (props) => {
               </ul>
             </div>
             <div className="flip-card-back">
-              <div className="flip-card-description">{props.cardDetails.description}</div>
+              <div className="flip-card-description">
+                {props.cardDetails.description}
+              </div>
               {props.cardDetails.linkToProject ? (
                 <Button
                   name={"Link to " + props.cardDetails.title}
-                  onClick={() => {props.openProject(props.cardDetails.linkToProject)}}
+                  onClick={() => {
+                    props.openProject(props.cardDetails.linkToProject);
+                  }}
                 />
               ) : null}
               <Button
@@ -46,7 +53,7 @@ const Card = (props) => {
         </div>
       );
     default:
-        return null;
+      return null;
   }
 };
 

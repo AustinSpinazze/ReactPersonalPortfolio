@@ -3,7 +3,6 @@ import React from 'react';
 import "./loader.css";
 
 const Loader = ({ type }) => {
-    console.log(type)
     switch(type) {
         case "main":
             return(
@@ -40,7 +39,7 @@ const Loader = ({ type }) => {
         default:
             return (
                 <svg width="100px" height="100px" viewBox="-3 -4 39 39">
-                    <polygon fill="none" stroke="#E85A4F" points="16,0 32,32 0,32" className="triangle-loader"/>
+                    <polygon fill="none" stroke="#E85A4F" points="16,0 32,32 0,32" className="triangle-loader" stroke="#E85A4F"/>
                 </svg>
             );
     }
