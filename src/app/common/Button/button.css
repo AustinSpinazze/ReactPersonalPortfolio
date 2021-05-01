@@ -35,6 +35,7 @@
   text-align: center;
   background-color: #e85a4f;
   color: white;
+  -webkit-appearance: none;
 }
 
 .default-button:link,
@@ -83,22 +84,6 @@
 .default-button-animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; /* Without this button would be visible as it makes the animation go first before the button renders*/
-}
-
-.default-button-mobile {
-  display: block;
-  border: none;
-  border-radius: 18px;
-  padding: 15px 40px;
-  font-size: 16px;
-  font-weight: 400;
-  outline: none;
-  min-width: 250px;
-  max-width: 250px;
-  margin: auto auto 10px auto;
-  text-align: center;
-  background-color: #e85a4f;
-  color: white;
 }
 
 .github-link-item {
