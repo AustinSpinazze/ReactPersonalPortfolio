@@ -13,7 +13,7 @@ const NavLinks = ({ toggleMenu, closeMenu }) => {
           type="navLink"
           name="Home"
           iconClassName="fa fa-home site-nav--icon"
-          onClick={toggleMenu}
+          onClick={closeMenu}
         ></Button>
       </li>
       <li>
@@ -23,7 +23,7 @@ const NavLinks = ({ toggleMenu, closeMenu }) => {
           type="navLink"
           name="Projects"
           iconClassName="fa fa-folder-open-o site-nav--icon"
-          onClick={toggleMenu}
+          onClick={closeMenu}
         />
       </li>
       <li>
@@ -33,7 +33,7 @@ const NavLinks = ({ toggleMenu, closeMenu }) => {
           type="navLink"
           name="Blog"
           iconClassName="fa fa-pencil site-nav--icon"
-          onClick={toggleMenu}
+          onClick={closeMenu}
         />
       </li>
       <li>
@@ -43,7 +43,7 @@ const NavLinks = ({ toggleMenu, closeMenu }) => {
           type="navLink"
           name="Contact"
           iconClassName="fa fa-paper-plane-o site-nav--icon"
-          onClick={toggleMenu}
+          onClick={closeMenu}
         />
       </li>
     </ul>

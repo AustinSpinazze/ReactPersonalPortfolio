@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import { NAV_LINK, IMAGE_LINK } from "../../../shared/constants/constants";
 import "./button.css";
 
 const Button = (props) => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const handleResize = () => {
+    console.log("size", window.innerWidth)
+    setWindowWidth(window.innerWidth);
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize)
+  }, [])
+
   const eventHandler = (e) => {
     props?.onClick?.(e);
   };
@@ -36,8 +47,8 @@ const Button = (props) => {
           type="button"
           className={
             props.className ||
-            "default-button default-button-color default-button-animated"
-          }
+            (windowWidth < 500 ? "default-button-mobile" : "default-button default-button-animated")
+            }
           onClick={eventHandler}
           value={props.name}
         />

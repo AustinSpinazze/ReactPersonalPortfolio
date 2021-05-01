@@ -24,6 +24,7 @@ header::after {
   background: #8e8d8a;
   clip-path: circle(0px at top right);
   z-index: 1;
+  cursor: pointer;
 }
 
 .site-nav--open {
