@@ -1,6 +1,6 @@
 import React from "react";
 
-import Logos from "../Logos";
+import Logos from "../../common/Logos";
 import NavLinks from "./NavLinks";
 import "./navbar.css";
 

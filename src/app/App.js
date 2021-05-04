@@ -4,8 +4,8 @@ import { connect } from "react-redux";
 
 import { initialLoad } from "./redux/Main/main.actions";
 import Loader from "./common/Loaders";
-import Footer from "./common/Footer";
-import Navbar from "./common/NavBar";
+import Footer from "./Layout/Footer";
+import Navbar from "./Layout/NavBar";
 import Home from "./Home";
 import Projects from "./Projects";
 import "./App.css";

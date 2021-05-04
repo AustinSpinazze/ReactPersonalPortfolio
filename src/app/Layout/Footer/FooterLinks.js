@@ -1,6 +1,6 @@
 import React from "react";
 
-import Button from "../Button/Button";
+import Button from "../../common/Button/Button";
 import linkedInLogo from "../../../../public/images/linkedinOutline100.png";
 import githubLogo from "../../../../public/images/githubOutline100.png";
 import instagramLogo from "../../../../public/images/instagramOutline100.png";
