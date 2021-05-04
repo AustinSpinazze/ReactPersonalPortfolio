@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
-import { NAV_LINK, IMAGE_LINK } from "../../../shared/constants/constants";
+import { NAV_LINK, IMAGE_LINK, LANDING_LINK } from "../../../shared/constants/constants";
 import "./button.css";
 
 const Button = (props) => {
@@ -23,14 +24,19 @@ const Button = (props) => {
           {props.name}
         </Link>
       );
-
     case IMAGE_LINK:
       return (
         <a href={props.link} className={props.className} target="_blank">
           <img className={props.imageClass} src={props.image} alt={props.alt} />
         </a>
       );
-
+    case LANDING_LINK:
+      return (
+        <HashLink smooth to={`/${props.path}`}>
+          <i className={props.iconClassName}></i>
+          {props.name}
+        </HashLink>
+      )
     default:
       return (
         <input

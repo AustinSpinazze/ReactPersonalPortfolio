@@ -1,11 +1,9 @@
 import React from "react";
 
-import Home from "./Home";
+import Contact from "./Contact";
 
 const index = () => {
-  return (
-    <Home />
-  );
+  return <Contact />;
 };
 
 export default index;

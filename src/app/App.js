@@ -1,13 +1,13 @@
 import React, { Fragment, useEffect } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Redirect, Route } from "react-router-dom";
 import { connect } from "react-redux";
 
 import { initialLoad } from "./redux/Main/main.actions";
 import Loader from "./common/Loaders";
 import Footer from "./Layout/Footer";
 import Navbar from "./Layout/NavBar";
-import Home from "./Home";
-import Projects from "./Projects";
+import Contact from "./Contact";
+import LandingPage from "./LandingPage";
 import "./App.css";
 
 const App = (props) => {
@@ -25,8 +25,9 @@ const App = (props) => {
         <Fragment>
           <Navbar />
           <div className="body-container">
-            <Route path="/" component={Home} exact={true} />
-            <Route path="/projects" component={Projects} />
+            <Route path="/" component={LandingPage} exact />
+            <Route path="/contact" component={Contact} />
+            <Redirect to="/" />
           </div>
           <Footer />
         </Fragment>

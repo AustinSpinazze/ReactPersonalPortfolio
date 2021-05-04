@@ -1,12 +1,13 @@
 import React from 'react';
 
-import './logos.css'
+import "../../Layout/NavBar/navbar.css"
+import logoStyles from './logos.css';
 
 const Logos = ({ size }) => {
     switch(size) {
         case "small":
             return(
-                <div className="logo">
+                <div className="logo fade-down animate">
                     <svg width="60" height="52" viewBox="0 0 60 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line y1="-0.5" x2="46.7608" y2="-0.5" transform="matrix(0.370328 -0.928901 0.93764 0.347607 10.4988 46.2368)" stroke="#E85A4F"/>
                         <line y1="-0.5" x2="7.86083" y2="-0.5" transform="matrix(0.886763 0.462225 -0.488965 0.872303 7 44.4719)" stroke="#E85A4F"/>

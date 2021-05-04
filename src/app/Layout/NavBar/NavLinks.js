@@ -3,46 +3,52 @@ import React from "react";
 import Button from "../../common/Button/Button";
 import "./navbar.css";
 
-const NavLinks = ({ toggleMenu, closeMenu }) => {
+const NavLinks = ({ closeMenu }) => {
   return (
     <ul onPointerLeave={closeMenu}>
-      <li>
+      <li className="one fade-down animate">
         <Button
-          path="/"
-          exact="true"
-          type="navLink"
-          name="Home"
-          iconClassName="fa fa-home site-nav--icon"
+          path="#about"
+          type="landingLink"
+          name="About Me"
+          iconClassName="fa fa-user site-nav--icon"
           onClick={closeMenu}
         ></Button>
       </li>
-      <li>
+      <li className="two fade-down animate">
         <Button
-          path="/projects"
-          exact="false"
-          type="navLink"
+          path="#experience"
+          type="landingLink"
+          name="Experience"
+          iconClassName="fa fa-briefcase site-nav--icon"
+          onClick={closeMenu}
+        />
+      </li>
+      <li className="three fade-down animate">
+        <Button
+          path="#projects"
+          type="landingLink"
           name="Projects"
           iconClassName="fa fa-folder-open-o site-nav--icon"
           onClick={closeMenu}
         />
       </li>
-      <li>
-        <Button
-          path="/blog"
-          exact="false"
-          type="navLink"
-          name="Blog"
-          iconClassName="fa fa-pencil site-nav--icon"
-          onClick={closeMenu}
-        />
-      </li>
-      <li>
+      <li className="four fade-down animate">
         <Button
           path="/contact"
-          exact="false"
           type="navLink"
           name="Contact"
           iconClassName="fa fa-paper-plane-o site-nav--icon"
+          onClick={closeMenu}
+        />
+      </li>
+      <li className="five fade-down animate">
+        <Button
+          path="/resume"
+          exact="false"
+          type="navLink"
+          name="Resume"
+          iconClassName="fa fa-file-text-o site-nav--icon"
           onClick={closeMenu}
         />
       </li>

@@ -5,7 +5,6 @@ import NavLinks from "./NavLinks";
 import "./navbar.css";
 
 const NavBar = ({ toggle, toggleMenu, closeMenu }) => {
-  console.log("toggle", toggle)
   return (
     <header>
       <div className="container">

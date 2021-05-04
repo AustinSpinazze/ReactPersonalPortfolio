@@ -11,6 +11,9 @@ html, body {
 .body-container {
     padding: 25px 25px 100px 25px;
     min-height: 100vh;
+    position: relative;
+    width: 50%;
+    margin: 0 25% 0 25%;
 }
 
 .loader {
@@ -26,5 +29,11 @@ html, body {
         justify-content: center;
         align-content: center;
         margin: auto 20px auto auto;
+    }
+
+    .body-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 }

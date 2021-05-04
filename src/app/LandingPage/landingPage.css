@@ -1,0 +1,10 @@
+.section {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 150px 0 150px 0;
+}
+
+.landing-page-container {
+    padding: 50px;
+}
