@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-import { NAV_LINK, IMAGE_LINK, LANDING_LINK } from "../../../shared/constants/constants";
+import { NAV_LINK, IMAGE_LINK, LANDING_LINK, LINK_BUTTON } from "../../../shared/constants/constants";
 import "./button.css";
 
 const Button = (props) => {
@@ -36,7 +36,15 @@ const Button = (props) => {
           <i className={props.iconClassName}></i>
           {props.name}
         </HashLink>
-      )
+      );
+    case LINK_BUTTON:
+      return (
+        <Link to={props.path}>
+          <button className={props.className}>
+            {props.name}
+          </button>
+        </Link>
+      );
     default:
       return (
         <input

@@ -1,10 +1,12 @@
-.section {
-    height: auto;
+#projects {
     display: flex;
     justify-content: center;
-    padding: 150px 0 150px 0;
+    width: 100%;
+    padding: 50px 0px;
 }
 
-.landing-page-container {
-    padding: 50px;
+.section {
+    height: auto;
+    padding: 150px 0;
+    max-width: 1000px;
 }

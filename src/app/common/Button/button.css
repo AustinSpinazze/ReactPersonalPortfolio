@@ -1,3 +1,17 @@
+.link-button {
+  color: #e85a4f;
+  background-color: transparent;
+  border: 1px solid #e85a4f;
+  padding: 1rem 1.5rem;
+  font-size: 14px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.link-button:hover {
+  background-color: #e8594f27;
+}
+
 .footer-link-image {
   max-height: 35px;
   filter: invert(100%);
