@@ -1,13 +1,14 @@
-import React from "react";
-import Projects from "../Projects/Projects";
+import React, { Fragment } from "react";
 
+import Intro from "../Intro";
+import Projects from "../Projects";
 import "./landingPage.css";
 
 const LandingPage = () => {
   return (
-    <div className="landing-page-container">
+    <Fragment>
       <div id="intro" className="section">
-        Intro
+        <Intro />
       </div>
       <div id="about" className="section">
         About Me
@@ -18,11 +19,8 @@ const LandingPage = () => {
       <div id="projects">
         <Projects />
       </div>
-      <div className="section">
-        Get in Touch
-      </div>
-    </div>
-
+      <div className="section">Get in Touch</div>
+    </Fragment>
   );
 };
 

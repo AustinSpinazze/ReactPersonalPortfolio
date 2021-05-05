@@ -186,7 +186,7 @@ header::after {
   animation-name: fade-down;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .menu-toggle {
     display: none;
   }

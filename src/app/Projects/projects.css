@@ -1,15 +1,10 @@
 .grid {
-  width: 1280px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minMax(250px, 300px));
-  grid-template-rows: repeat(auto-fill, 400px);
+  grid-template-columns: repeat(auto-fit, minMax(min-content, 300px));
+  grid-template-rows: repeat(auto-fit, 400px);
   grid-row-gap: 25px;
   grid-column-gap: 15px;
   justify-items: center;
   justify-content: center;
-}
-
-.grid-container {
-  display: flex;
-  justify-content: center;
+  width: 100%;
 }

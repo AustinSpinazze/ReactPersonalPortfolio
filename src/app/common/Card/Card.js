@@ -13,10 +13,12 @@ const Card = (props) => {
             <div className="flip-card-front">
               <h1>{props.cardDetails.title}</h1>
               {props.cardDetails.image ? (
-                <img
+                <div className="flip-card-header">
+                  <img
                   className="flip-card-header-img"
                   src={props.cardDetails.image}
                 />
+                </div>
               ) : null}
               <ul className="flip-card-technologies">
                 {props.cardDetails.technologies.map((technology, i) => {

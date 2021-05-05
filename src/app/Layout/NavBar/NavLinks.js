@@ -45,7 +45,6 @@ const NavLinks = ({ closeMenu }) => {
       <li className="five fade-down animate">
         <Button
           path="/resume"
-          exact="false"
           type="navLink"
           name="Resume"
           iconClassName="fa fa-file-text-o site-nav--icon"

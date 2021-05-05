@@ -1,14 +1,18 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 
 import Logos from "../../common/Logos";
 import NavLinks from "./NavLinks";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 
 const NavBar = ({ toggle, toggleMenu, closeMenu }) => {
   return (
     <header>
       <div className="container">
-        <Logos size="small" />
+        <Link to="/" >
+          <Logos size="small" />
+        </Link>
         <nav
           className={toggle ? "site-nav site-nav--open" : "site-nav"}
           style={

@@ -1,7 +1,11 @@
 import React from "react";
 
+import Intro from "./Intro"
+
 const index = () => {
-  return <AboutMe />;
+  return (
+      <Intro />
+  );
 };
 
 export default index;

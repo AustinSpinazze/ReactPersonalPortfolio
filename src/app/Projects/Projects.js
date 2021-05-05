@@ -6,13 +6,11 @@ import "./projects.css";
 
 const Projects = () => {
   return (
-    <div className="grid-container">
       <div className="grid">
         {PROJECTS.map((project, i) => {
           return <Card cardType={"flip"} cardDetails={project} key={i} />;
         })}
       </div>
-    </div>
   );
 };
 
