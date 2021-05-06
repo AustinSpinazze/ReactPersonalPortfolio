@@ -12,7 +12,7 @@ import "./App.css";
 
 const App = (props) => {
   useEffect(() => {
-    setTimeout(props.initialLoad, 2500);
+    setTimeout(null, 2500);
   }, []);
 
   return (

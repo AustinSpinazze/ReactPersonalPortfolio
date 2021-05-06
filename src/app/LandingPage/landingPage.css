@@ -6,7 +6,14 @@
 }
 
 .section {
-    height: auto;
+    height: 100vh;
     padding: 150px 0;
     max-width: 1000px;
+}
+
+@media screen and (max-width: 480px) and (min-height: 700px) {
+    .section {
+        padding-top: 50px;
+        padding-bottom: 10vh;
+    }
 }

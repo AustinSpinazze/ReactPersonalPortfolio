@@ -55,7 +55,7 @@ body {
   .loader {
     display: flex;
     justify-content: center;
-    align-content: center;
-    margin: auto 20px auto auto;
+    align-items: center;
+    margin-right: 25px;
   }
 }
