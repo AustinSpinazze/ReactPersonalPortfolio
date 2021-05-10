@@ -1,3 +1,7 @@
+#intro {
+    min-height: 100vh;
+}
+
 #projects {
     display: flex;
     justify-content: center;
@@ -5,15 +9,19 @@
     padding: 50px 0px;
 }
 
+#about {
+    max-width: 900px;
+}
+
 .section {
-    height: 100vh;
-    padding: 150px 0;
+    padding: 150px 0 25px;
     max-width: 1000px;
+    width: 100%;
+    min-height: 100vh;
 }
 
 @media screen and (max-width: 480px) and (min-height: 700px) {
     .section {
-        padding-top: 50px;
-        padding-bottom: 10vh;
+        padding: 25px 0 100px;
     }
 }

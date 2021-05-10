@@ -1,0 +1,126 @@
+.about h2 {
+    color: #6c6b67;
+    line-height: 1.5;
+}
+
+.about-heading {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 0px 40px;
+  width: 100%;
+  font-size: clamp(26px, 5vw, 32px);
+  white-space: nowrap;
+}
+
+.about-heading::after {
+    content: "";
+    display: block;
+    position: relative;
+    height: 1px;
+    background-color: #e6908a;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.about-image-wrapper {
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background: #e6908a;
+    border-radius: 5px;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    mix-blend-mode: multiply;
+    z-index: 1;
+}
+
+.about-image-wrapper:hover {
+    background: none;
+    outline: 0;
+    transition: all 0.25s;
+}
+
+.about-image:hover {
+    mix-blend-mode: normal;
+}
+
+.about-image-wrapper::after {
+    position: absolute;
+    content: "";
+    display: block;
+    z-index: -1; 
+    top: 20px;
+    left: 20px;
+    border: 2px solid #e85a4f;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+.about-image-wrapper:hover::after {
+    top: 10px;
+    left: 10px;
+}
+
+.inner {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+    height: auto;
+    position: relative;
+    z-index: 0;
+}
+
+.about-text {
+    max-width: 500px;
+    width: 100%;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, minMax(140px, 200px));
+    padding: 0px;
+    margin: 20px 0px 0px;
+    overflow: hidden;
+    list-style: none;
+}
+
+.skills-list i {
+    margin: 0 0 10px 1px;
+}
+
+.skills-list-title {
+    margin: 0 5px 0;
+    color: #6c6b67;
+}
+
+.filled {
+    color: #e85a4f;
+}
+
+.not-filled {
+    color: #989898;
+}
+
+@media screen and (max-width: 480px) and (min-height: 700px) {
+    .inner {
+        grid-template-columns: auto;
+    }
+
+    .about h2 {
+        margin: 0 0 10px;
+    }
+}
+
+/* box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px; */
+

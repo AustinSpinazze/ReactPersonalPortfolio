@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 
 import Intro from "../Intro";
+import AboutMe from "../AboutMe";
 import Projects from "../Projects";
 import "./landingPage.css";
 
@@ -11,7 +12,7 @@ const LandingPage = () => {
         <Intro />
       </div>
       <div id="about" className="section">
-        About Me
+        <AboutMe />
       </div>
       <div id="experience" className="section">
         Experience
