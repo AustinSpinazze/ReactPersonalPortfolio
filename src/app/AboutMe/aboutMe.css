@@ -27,6 +27,7 @@
 .about-image-wrapper {
     position: relative;
     max-width: 300px;
+    max-height: 400px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -37,6 +38,8 @@
 
 .about-image {
     width: 100%;
+    max-width: 300px;
+    max-height: 400px;
     height: auto;
     border-radius: 5px;
     mix-blend-mode: multiply;
@@ -114,10 +117,23 @@
 
 @media screen and (max-width: 480px) and (min-height: 700px) {
     .inner {
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
     }
 
     .about h2 {
         margin: 0 0 10px;
+    }
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .about-image-wrapper:hover {
+        background: none;
+        outline: 0;
+        transition: all 0.25s;
+    }
+
+    .about-image-wrapper:hover::after {
+        top: 10px;
+        left: 10px;
     }
 }
