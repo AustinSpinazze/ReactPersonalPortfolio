@@ -115,13 +115,17 @@
     color: #989898;
 }
 
-@media screen and (max-width: 480px) and (min-height: 700px) {
+@media screen and (max-width: 480px) {
     .inner {
-        grid-template-columns: auto;
+        display: block;
     }
 
     .about h2 {
         margin: 0 0 10px;
+    }
+
+    .about-image-wrapper {
+        margin: 50px 0 0;
     }
 }
 

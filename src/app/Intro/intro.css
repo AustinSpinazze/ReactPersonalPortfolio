@@ -114,4 +114,18 @@ p {
   .intro p {
     font-size: 16px;
   }
+
+  .intro h2 {
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .intro p {
+    font-size: 16px;
+  }
+
+  .intro h2 {
+    line-height: 1.4;
+  }
 }

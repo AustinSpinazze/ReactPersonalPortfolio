@@ -14,14 +14,14 @@
 }
 
 .section {
-    padding: 150px 0 25px;
+    padding: 150px 0 0;
     max-width: 1000px;
     width: 100%;
     min-height: 100vh;
 }
 
-@media screen and (max-width: 480px) and (min-height: 700px) {
+@media screen and (max-width: 480px) {
     .section {
-        padding: 25px 0 100px;
+        padding: 50px 0 100px;
     }
 }
