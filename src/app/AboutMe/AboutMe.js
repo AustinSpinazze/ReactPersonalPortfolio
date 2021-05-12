@@ -33,7 +33,7 @@ const AboutMe = () => {
           {SKILLS.map((skill, i) => {
             return(
             <li key={i}>
-              <i className="fa fa-caret-right skills-list-icon"><span className="skills-list-title">{skill.title}</span></i>
+              <img className="skills-icon" src={skill.techIcon ? skill.techIcon : null} /><span className="skills-list-title">{skill.title}</span>
                 {/* {skill.level.map((className, i) => {
                     return <i className={`${className}`} key={i} />
                     May use this at a later date
