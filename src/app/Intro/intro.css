@@ -110,7 +110,7 @@ p {
   animation-name: fade-up;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), screen and (max-height: 950px) {
   .intro p {
     font-size: 16px;
   }
@@ -118,9 +118,13 @@ p {
   .intro h2 {
     line-height: 1.5;
   }
+
+  .big-heading {
+    font-size: 40px;
+  }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 550px), screen and (max-height: 700px) {
   .intro p {
     font-size: 16px;
   }
@@ -128,4 +132,9 @@ p {
   .intro h2 {
     line-height: 1.4;
   }
+
+  .big-heading {
+    font-size: 40px;
+  }
 }
+

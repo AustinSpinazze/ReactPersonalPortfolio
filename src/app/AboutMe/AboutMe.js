@@ -7,9 +7,9 @@ import "./aboutMe.css";
 const AboutMe = () => {
   return (
     <div className="about">
-      <h2 className="about-heading">About Me</h2>
+      <h2 className="about-heading animate fade-up">About Me</h2>
       <div className="inner">
-        <div className="about-text">
+        <div className="about-text fade animate fade-up">
           <div>
             <p>
               Hi there! My name is Austin Spinazze. I am an innovative and
@@ -33,15 +33,16 @@ const AboutMe = () => {
           {SKILLS.map((skill, i) => {
             return(
             <li key={i}>
-              <span className="skills-list-title">{skill.title}:</span>
-                {skill.level.map((className, i) => {
+              <i className="fa fa-caret-right skills-list-icon"><span className="skills-list-title">{skill.title}</span></i>
+                {/* {skill.level.map((className, i) => {
                     return <i className={`${className}`} key={i} />
-                })}
+                    May use this at a later date
+                })} */}
             </li>);
           })}
           </ul>
         </div>
-        <div className="about-image-wrapper">
+        <div className="about-image-wrapper animate fade-up">
           <img className="about-image" src={profile} />
         </div>
       </div>
