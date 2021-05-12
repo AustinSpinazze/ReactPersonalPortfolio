@@ -25,8 +25,7 @@ const AboutMe = () => {
               efficient way to use those technologies.
             </p>
             <p>
-              Here are a few technologies I have been working with recently and my 
-              strength in them:
+              Here are a few technologies I have been working with recently:
             </p>
           </div>
           <ul className="skills-list">

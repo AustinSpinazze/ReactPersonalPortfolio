@@ -72,7 +72,6 @@
 .inner {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  gap: 50px;
   height: auto;
   position: relative;
   z-index: 0;
