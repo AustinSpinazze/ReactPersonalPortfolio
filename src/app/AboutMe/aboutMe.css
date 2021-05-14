@@ -8,7 +8,7 @@
   -webkit-box-align: center;
   align-items: center;
   position: relative;
-  margin: 10px 0px 40px;
+  margin: 10px 0px 10px;
   width: 100%;
   font-size: clamp(26px, 5vw, 32px);
   white-space: nowrap;
@@ -26,10 +26,9 @@
 
 .about-image-wrapper {
   position: relative;
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 200px;
+  max-height: 300px;
   width: 100%;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   border-radius: 5px;
@@ -37,8 +36,8 @@
 
 .about-image {
   width: 100%;
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 200px;
+  max-height: 300px;
   height: auto;
   border-radius: 5px;
   z-index: 1;
@@ -83,6 +82,11 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding-right: 15px;
+}
+
+.about-text p {
+  margin: 0;
 }
 
 .skills-list {
@@ -157,6 +161,20 @@
 .fade-up {
   -webkit-animation-name: fade-up;
   animation-name: fade-up;
+}
+
+@media screen and (max-width: 600px) {
+  .inner {
+    display: block;
+  }
+
+  .skills-list {
+    margin: 0 0 50px;
+  }
+
+  .about-image-wrapper {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 480px) {

@@ -8,3 +8,40 @@
   justify-content: center;
   width: 100%;
 }
+
+.projects h2 {
+  color: #6c6b67;
+  line-height: 1.5;
+}
+
+.projects-heading {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin: 0 0px 30px;
+  width: 100%;
+  font-size: clamp(26px, 5vw, 32px);
+  white-space: nowrap;
+  justify-content: center;
+}
+
+.projects-heading::before {
+  content: "";
+  display: block;
+  position: relative;
+  height: 1px;
+  background-color: #e6908a;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.projects-heading::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 1px;
+  background-color: #e6908a;
+  width: 300px;
+  margin-left: 20px;
+}

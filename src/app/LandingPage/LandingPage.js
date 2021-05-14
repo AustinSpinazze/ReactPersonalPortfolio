@@ -18,7 +18,7 @@ const LandingPage = () => {
       <div id="experience" className="section">
         <Experience />
       </div>
-      <div id="projects">
+      <div id="projects" className="section">
         <Projects />
       </div>
       <div className="section">Get in Touch</div>

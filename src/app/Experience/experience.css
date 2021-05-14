@@ -1,6 +1,3 @@
-.experience {
-}
-
 .experience h2 {
   color: #6c6b67;
   line-height: 1.5;
@@ -11,7 +8,7 @@
   -webkit-box-align: center;
   align-items: center;
   position: relative;
-  margin: 10px 0px 40px;
+  margin: 10px 0px 10px;
   width: 100%;
   font-size: clamp(26px, 5vw, 32px);
   white-space: nowrap;
@@ -68,11 +65,13 @@
 @media screen and (max-width: 768px) {
   .experience {
     max-width: 500px;
+    padding: 0 25px;
   }
 }
 
 @media screen and (max-width: 550px) {
   .experience {
+    padding: 0 25px;
     max-width: 500px;
   }
 }

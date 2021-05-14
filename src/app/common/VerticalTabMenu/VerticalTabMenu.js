@@ -8,7 +8,7 @@ const VerticalTabMenu = ({ currentTab, tabChangeHandler, screenWidth, availableS
     console.log(screenWidth)
   return (
     <div className="tab-menu">
-      <div className="tab-list">
+      <div className="tab-list animate fade-up">
         {EXPERIENCE_TABS.map((tabData, i) => {
           return (
             <Button
@@ -29,7 +29,7 @@ const VerticalTabMenu = ({ currentTab, tabChangeHandler, screenWidth, availableS
           style={screenWidth < 600 || availableScreenWidth < 600 ? {transform: `translateX(calc(${currentTab} * 120px))`} : {transform: `translateY(calc(${currentTab} * 50px` }}
         ></div>
       </div>
-      <div className="tab-panel">
+      <div className="tab-panel animate fade-up">
         <h3>
           <span>{EXPERIENCE_TABS[currentTab].title}</span>
           <span className="company">
