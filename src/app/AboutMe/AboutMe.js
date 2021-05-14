@@ -1,6 +1,6 @@
 import React from "react";
 
-import { SKILLS } from "../../shared/constants/skills";
+import { SKILLS } from "../../shared/constants/constants";
 import profile from "../../../public/images/profile.jpeg";
 import "./aboutMe.css";
 
@@ -9,7 +9,7 @@ const AboutMe = () => {
     <div className="about">
       <h2 className="about-heading animate fade-up">About Me</h2>
       <div className="inner">
-        <div className="about-text fade animate fade-up">
+        <div className="about-text animate fade-up">
           <div>
             <p>
               Hi there! My name is Austin Spinazze. I am an innovative and

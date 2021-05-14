@@ -4,6 +4,7 @@ import Intro from "../Intro";
 import AboutMe from "../AboutMe";
 import Projects from "../Projects";
 import "./landingPage.css";
+import Experience from "../Experience";
 
 const LandingPage = () => {
   return (
@@ -15,7 +16,7 @@ const LandingPage = () => {
         <AboutMe />
       </div>
       <div id="experience" className="section">
-        Experience
+        <Experience />
       </div>
       <div id="projects">
         <Projects />

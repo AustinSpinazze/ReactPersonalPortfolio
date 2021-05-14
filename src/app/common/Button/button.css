@@ -116,3 +116,39 @@
 .github-link-image:hover {
   filter: invert(50%);
 }
+
+.tab-link {
+  display: flex;
+  align-items: center;
+  -webkit-box-align: center;
+  width: 100%;
+  height: 50px;
+  padding: 0 25px 2px;
+  border: none;
+  border-left: solid 2px#989898;
+  background-color: transparent;
+  color: #6c6b67;
+  font-size: 16px;
+  text-align: left;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.tab-link:hover {
+  background-color: #dcd9cf;
+  color: #e85a4f;
+}
+
+.active {
+  color: #e85a4f;
+  background-color: #dcd9cf;
+}
+
+@media screen and (max-width: 600px) {
+  .tab-link {
+    border: none;
+    border-bottom: solid 2px #989898;
+    padding: 0 27px 2px;
+    justify-content: center;
+  }
+}

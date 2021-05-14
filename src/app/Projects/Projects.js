@@ -1,7 +1,7 @@
 import React from "react";
 
 import Card from "../common/Card";
-import { PROJECTS } from "../../shared/constants/projects";
+import { PROJECTS } from "../../shared/constants/constants";
 import "./projects.css";
 
 const Projects = () => {

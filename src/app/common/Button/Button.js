@@ -2,11 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-import { NAV_LINK, IMAGE_LINK, LANDING_LINK, LINK_BUTTON } from "../../../shared/constants/constants";
+import {
+  NAV_LINK,
+  IMAGE_LINK,
+  LANDING_LINK,
+  LINK_BUTTON,
+  TAB_LINK,
+} from "../../../shared/constants/constants";
 import "./button.css";
 
 const Button = (props) => {
-
   const eventHandler = (e) => {
     props?.onClick?.(e);
   };
@@ -40,19 +45,22 @@ const Button = (props) => {
     case LINK_BUTTON:
       return (
         <Link to={props.path}>
-          <button className={props.className}>
-            {props.name}
-          </button>
+          <button className={props.className}>{props.name}</button>
         </Link>
+      );
+    case TAB_LINK:
+      return (
+        <button className={props.className} onClick={() => props.tabChangeHandler(props.tabData.id)}>
+          {props.tabData.employerName}
+        </button>
       );
     default:
       return (
         <input
           type="button"
           className={
-            props.className ||
-             "default-button default-button-animated"
-            }
+            props.className || "default-button default-button-animated"
+          }
           onClick={eventHandler}
           value={props.name}
         />
