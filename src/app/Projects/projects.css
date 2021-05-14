@@ -26,7 +26,7 @@
   justify-content: center;
 }
 
-.projects-heading::before {
+/* .projects-heading::before {
   content: "";
   display: block;
   position: relative;
@@ -34,7 +34,7 @@
   background-color: #e6908a;
   width: 300px;
   margin-right: 20px;
-}
+} */
 
 .projects-heading::after {
   content: "";
