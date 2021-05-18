@@ -1,36 +1,59 @@
 #intro {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 #projects {
-    width: 100%;
-    padding: 50px 0px;
-    max-width: 1600px;
+  width: 100%;
+  padding: 50px 0px;
+  max-width: 1600px;
 }
 
 #about {
-    max-width: 900px;
+  max-width: 900px;
 }
 
 #experience {
-    max-width: 900px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#contact {
+  height: 500px;
+  text-align: center;
+  max-width: 500px;
+}
+
+.contact-section-heading {
+  font-size: 40px;
+  color: #6c6b67;
+  font-weight: 600;
+  margin: 0 0 10px;
 }
 
 .section {
-    padding: 150px 0 0;
-    max-width: 1000px;
-    width: 100%;
+  padding: 150px 0 0;
+  max-width: 1000px;
+  width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .section {
+    padding: 50px 0 50px;
+  }
+
+  #experience {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 480px), screen and (max-height: 700px) {
-    .section {
-        padding: 50px 0 50px;
-    }
+  .section {
+    padding: 50px 0 50px;
+  }
 
-    #experience {
-        display: block;
-    }
+  #experience {
+    display: block;
+  }
 }

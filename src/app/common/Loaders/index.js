@@ -1,9 +1,9 @@
 import React from 'react';
 import Loaders from './Loader';
 
-const index = ({ loader }) => {
+const index = (props) => {
     return (
-        <Loaders type={loader}/>
+        <Loaders type={props.loader} complete={props.complete}/>
     );
 };
 

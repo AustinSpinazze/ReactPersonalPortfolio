@@ -8,6 +8,7 @@ import {
   LANDING_LINK,
   LINK_BUTTON,
   TAB_LINK,
+  SEND_FORM
 } from "../../../shared/constants/constants";
 import "./button.css";
 
@@ -54,6 +55,10 @@ const Button = (props) => {
           {props.tabData.employerName}
         </button>
       );
+    case SEND_FORM:
+        return (
+            <button className={props.className} onClick={props.onClick}>{props.name}</button>
+        );
     default:
       return (
         <input
