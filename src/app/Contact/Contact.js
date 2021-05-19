@@ -8,12 +8,11 @@ import "./contact.css";
 const Contact = ({
   formState,
   loading,
+  complete,
   onChangeHandler,
   sendMessage,
-  errors,
-  complete,
+  errors
 }) => {
-  console.log(loading, complete);
   return (
     <Fragment>
       {loading ? (

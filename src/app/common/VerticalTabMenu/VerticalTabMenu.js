@@ -5,7 +5,6 @@ import { EXPERIENCE_TABS } from "../../../shared/constants/constants";
 import "./verticalTabMenu.css";
 
 const VerticalTabMenu = ({ currentTab, tabChangeHandler, screenWidth, availableScreenWidth }) => {
-    console.log(screenWidth)
   return (
     <div className="tab-menu">
       <div className="tab-list animate fade-up">
@@ -45,7 +44,7 @@ const VerticalTabMenu = ({ currentTab, tabChangeHandler, screenWidth, availableS
         <div>
             <ul>
                 {EXPERIENCE_TABS[currentTab].duties.map((description, i) => {
-                    return <div className="tab-list-item"><i className="fa fa-caret-right tab-list-icon"/><li>{description}</li></div>
+                    return <div className="tab-list-item" key={i}><i className="fa fa-caret-right tab-list-icon"/><li>{description}</li></div>
                 })}
             </ul>
         </div>

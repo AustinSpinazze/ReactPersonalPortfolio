@@ -1,13 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
 import Contact from "./Contact";
 import validate from "../../utils/utils";
-import { Redirect } from "react-router";
 
 const index = () => {
-  const [loading, setLoading] = useState(false);
-  const [complete, setComplete] = useState(false);
+  const [loadState, setLoadState] = useState({
+    loading: false,
+    complete: false
+  })
+  // const [loading, setLoading] = useState(false);
+  // const [complete, setComplete] = useState(false);
   const [errors, setErrors] = useState({});
 
   const [formState, setFormState] = useState({
@@ -17,12 +20,6 @@ const index = () => {
     subject: "",
     message: "",
   });
-
-  useEffect(() => {
-    setTimeout(() => {
-      setComplete(true);
-    }, 10000);
-  }, [loading]);
 
   const onChangeHandler = (e) => {
     setFormState({
@@ -35,7 +32,6 @@ const index = () => {
     setErrors({});
     let formErrors = validate(formState);
     if (formErrors.error === false) {
-      setLoading(true);
       emailjs
         .send(
           process.env.EMAILJS_SERVICE_ID,
@@ -45,6 +41,18 @@ const index = () => {
         )
         .then(
           (result) => {
+            setLoadState((prevState) => {
+              return {
+                ...prevState,
+                loading: true
+            }});
+            setTimeout(() => {
+              setLoadState((prevState) => {
+                return {
+                  ...prevState,
+                  complete: true
+              }});
+            }, 3000);
             console.log(result);
           },
           (error) => {
@@ -52,7 +60,6 @@ const index = () => {
           }
         );
     } else {
-      console.log(formErrors);
       setErrors(formErrors);
     }
   };
@@ -60,8 +67,8 @@ const index = () => {
   return (
     <Contact
       formState={formState}
-      loading={loading}
-      complete={complete}
+      loading={loadState.loading}
+      complete={loadState.complete}
       errors={errors}
       onChangeHandler={onChangeHandler}
       sendMessage={sendMessage}

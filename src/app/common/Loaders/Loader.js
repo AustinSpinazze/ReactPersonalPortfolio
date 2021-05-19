@@ -3,7 +3,6 @@ import React from 'react';
 import "./loader.css";
 
 const Loader = (props) => {
-    console.log(props.complete, "loader compate");
     switch (props.type) {
       case "main":
         return (
@@ -223,7 +222,7 @@ const Loader = (props) => {
                 transform="translate(-422.65 -340)"
                 fill="none"
                 stroke="#e85a4f"
-                stroke-miterlimit="10"
+
               />
               <line
                 x1="37.35"
@@ -232,7 +231,7 @@ const Loader = (props) => {
                 y2="18"
                 fill="none"
                 stroke="#e85a4f"
-                stroke-miterlimit="10"
+
               />
             </g>
             <path
@@ -240,28 +239,24 @@ const Loader = (props) => {
               transform="translate(-422.65 -340)"
               fill="none"
               stroke="#e85a4f"
-              stroke-miterlimit="10"
               className="contact-icon-animation one"
             />
             <path
               d="M13.7 18.07, L32.68, 18.07"
               fill="none"
               stroke="#e85a4f"
-              stroke-miterlimit="10"
               className="contact-icon-animation two"
             />
             <path
               d="M6.17 26.64, L17.09 26.64"
               fill="none"
               stroke="#e85a4f"
-              stroke-miterlimit="10"
               className="contact-icon-animation three"
             />
             <path
               d="M0 13.23, L11.63 13.23"
               fill="none"
               stroke="#e85a4f"
-              stroke-miterlimit="10"
               className="contact-icon-animation four"
             />
             <path
@@ -269,14 +264,12 @@ const Loader = (props) => {
               transform="translate(-422.65 -340)"
               fill="none"
               stroke="#e85a4f"
-              stroke-miterlimit="10"
               className="contact-icon-animation five"
             />
             <path
               d="M20.73 22.96, L31.01 22.96"
               fill="none"
               stroke="#e85a4f"
-              stroke-miterlimit="10"
               className="contact-icon-animation six"
             />
           </svg>

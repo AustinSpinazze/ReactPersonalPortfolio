@@ -1,5 +1,4 @@
 export default function validate(values) {
-  console.log("validation active");
   let errors = { error: false };
   if (!values.firstName) {
     errors.firstName = "First name is required";
