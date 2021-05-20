@@ -24,7 +24,7 @@ const App = (props) => {
       ) : (
         <Fragment>
           <Navbar />
-          <div className="body-container" onWheel={() => {props.closeMenu}}>
+          <div className="body-container" onWheel={() => {props.closeMenu}} onTouchMove={() => props.closeMenu} onScroll={() => props.closeMenu}>
             <Route path="/" component={LandingPage} exact />
             <Route path="/contact" component={Contact} />
             <Redirect to="/" />

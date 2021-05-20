@@ -12,7 +12,7 @@ const NavBar = ({ toggle, toggleMenu, closeMenu }) => {
         <Link to="/">
           <Logos size="small" />
         </Link>
-        <ul className={toggle ? "nav-menu nav-menu-active" : "nav-menu"} onMouseLeave={closeMenu} onWheel={closeMenu}>
+        <ul className={toggle ? "nav-menu nav-menu-active" : "nav-menu"} onMouseLeave={closeMenu} onWheel={closeMenu} onTouchMove={closeMenu}>
           <li className="one fade-down animate nav-item">
             <Button
               path="#about"

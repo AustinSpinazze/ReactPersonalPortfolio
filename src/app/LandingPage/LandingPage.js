@@ -24,7 +24,7 @@ const LandingPage = () => {
       </div>
       <div id="contact" className="section">
         <h1 className="contact-section-heading">Get In Touch</h1>
-        <p>
+        <p className="contact-section-description">
         If you want to get in touch, talk to me about a 
         project collaboration or just say hi, click the button 
         below and send me a message!
