@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Create .env file
-          uses: SpicyPizza/create-envfile@v1.1
+        uses: SpicyPizza/create-envfile@v1.1
           with:
             EMAILJS_USER_ID: ${{secrets.EMAILJS_USER_ID}}
             EMAILJS_SERVICE_ID : ${{ secrets.EMAILJS_SERVICE_ID }}
