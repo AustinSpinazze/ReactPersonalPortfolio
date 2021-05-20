@@ -39,8 +39,7 @@ const Button = (props) => {
     case LANDING_LINK:
       return (
         <HashLink smooth to={`/${props.path}`}>
-          <i className={props.iconClassName}></i>
-          {props.name}
+          <span onClick={props.onClick} className={props.className}><i className={props.iconClassName}></i>{props.name}</span>
         </HashLink>
       );
     case LINK_BUTTON:

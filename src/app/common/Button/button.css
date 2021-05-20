@@ -12,6 +12,16 @@
   background-color: #e8594f27;
 }
 
+.nav-link {
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #e85a4f;
+}
+
 .footer-link-image {
   max-height: 35px;
   filter: invert(100%);
