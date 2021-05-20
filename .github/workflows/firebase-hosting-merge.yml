@@ -12,11 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Create .env file
-          uses: SpicyPizza/create-envfile@v1.1
-          with:
-            EMAILJS_USER_ID: ${{secrets.EMAILJS_USER_ID}}
-            EMAILJS_SERVICE_ID : ${{ secrets.EMAILJS_SERVICE_ID }}
-            EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
+        uses: SpicyPizza/create-envfile@v1.0
+        with:
+            envkey_EMAILJS_USER_ID: ${{secrets.EMAILJS_USER_ID}}
+            envkey_EMAILJS_SERVICE_ID : ${{ secrets.EMAILJS_SERVICE_ID }}
+            envkey_EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
       - run: npm install
       - run: npx webpack --display-error-details
       - run: npm run build
