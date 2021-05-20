@@ -17,6 +17,8 @@ jobs:
             EMAILJS_USER_ID: ${{secrets.EMAILJS_USER_ID}}
             EMAILJS_SERVICE_ID : ${{ secrets.EMAILJS_SERVICE_ID }}
             EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
+            directory: ./
+            file_name: .env
       - run: npm install
       - run: npx webpack --display-error-details
       - run: npm run build
