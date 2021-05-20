@@ -15,6 +15,14 @@ const App = (props) => {
     setTimeout(props.initialLoad, 2500);
   }, []);
 
+  useEffect(() => {
+    const scrollListener = () => {
+      console.log("scroll1", props.closeMenu)
+      props.closeMenu;
+    }
+    window.addEventListener("scroll", scrollListener);
+  }, [props.toggle])
+
   return (
     <BrowserRouter>
       {props.firstLoad ? (
@@ -24,7 +32,7 @@ const App = (props) => {
       ) : (
         <Fragment>
           <Navbar />
-          <div className="body-container" onWheel={() => {props.closeMenu}} onTouchMove={() => props.closeMenu} onScroll={() => props.closeMenu}>
+          <div className="body-container">
             <Route path="/" component={LandingPage} exact />
             <Route path="/contact" component={Contact} />
             <Redirect to="/" />
@@ -39,14 +47,12 @@ const App = (props) => {
 const mapStateToProps = (state) => {
   return {
     firstLoad: state.main.firstLoad,
-    toggle: state.main.toggle
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
     initialLoad: () => dispatch(initialLoad()),
-    closeMenu: () => dispatch(closeMenu())
   };
 };
 

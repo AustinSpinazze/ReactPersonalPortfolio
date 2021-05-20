@@ -7,19 +7,18 @@ import "./navbar.css";
 
 const NavBar = ({ toggle, toggleMenu, closeMenu }) => {
   return (
-    <header className="header">
+    <header className="header" onWheel={closeMenu} onTouchMove={closeMenu} onMouseLeave={closeMenu}>
       <nav className="navbar">
         <Link to="/">
           <Logos size="small" />
         </Link>
-        <ul className={toggle ? "nav-menu nav-menu-active" : "nav-menu"} onMouseLeave={closeMenu} onWheel={closeMenu} onTouchMove={closeMenu}>
+        <ul className={toggle ? "nav-menu nav-menu-active" : "nav-menu"}>
           <li className="one fade-down animate nav-item">
             <Button
               path="#about"
               type="landingLink"
               name="About Me"
               className="nav-link"
-              // iconClassName="fa fa-user"
               onClick={closeMenu}
             ></Button>
           </li>
@@ -29,7 +28,6 @@ const NavBar = ({ toggle, toggleMenu, closeMenu }) => {
               type="landingLink"
               name="Experience"
               className="nav-link"
-              // iconClassName="fa fa-briefcase"
               onClick={closeMenu}
             />
           </li>
@@ -39,7 +37,6 @@ const NavBar = ({ toggle, toggleMenu, closeMenu }) => {
               type="landingLink"
               name="Projects"
               className="nav-link"
-              // iconClassName="fa fa-folder-open-o"
               onClick={closeMenu}
             />
           </li>
@@ -49,7 +46,6 @@ const NavBar = ({ toggle, toggleMenu, closeMenu }) => {
               type="navLink"
               name="Contact"
               className="nav-link"
-              // iconClassName="fa fa-paper-plane-o"
               onClick={closeMenu}
             />
           </li>
@@ -59,7 +55,6 @@ const NavBar = ({ toggle, toggleMenu, closeMenu }) => {
               type="navLink"
               name="Resume"
               className="nav-link"
-              // iconClassName="fa fa-file-text-o"
               onClick={closeMenu}
             />
           </li>
