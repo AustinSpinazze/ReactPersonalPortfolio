@@ -14,10 +14,9 @@ jobs:
       - name: Create .env file
         uses: SpicyPizza/create-envfile@v1.1
         with:
-            envkey_EMAILJS_USER_ID: ${{secrets.EMAILJS_USER_ID}}
-            envkey_EMAILJS_SERVICE_ID : ${{ secrets.EMAILJS_SERVICE_ID }}
-            envkey_EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
-            directory: ./
+            INPUT_ENVKEY_EMAILJS_USER_ID: ${{secrets.EMAILJS_USER_ID}}
+            INPUT_ENVKEY_EMAILJS_SERVICE_ID : ${{ secrets.EMAILJS_SERVICE_ID }}
+            INPUT_ENVKEY_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
       - run: npm install
       - run: npx webpack --display-error-details
       - run: npm run build
