@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
+import Resume from "../../../../public/docs/Austin Spinazze Developer Resume.pdf";
 import {
   NAV_LINK,
   IMAGE_LINK,
@@ -11,7 +12,6 @@ import {
   SEND_FORM,
   RESUME_LINK
 } from "../../../shared/constants/constants";
-import { RESUME } from "../../../shared/constants/urls";
 import "./button.css";
 
 const Button = (props) => {
@@ -33,7 +33,7 @@ const Button = (props) => {
       );
     case RESUME_LINK:
       return (
-        <a href={RESUME} className={props.className}>
+        <a href={Resume} className={props.className} target="_blank">
           {props.name}
         </a>
       );
