@@ -51,11 +51,9 @@ const NavBar = ({ toggle, toggleMenu, closeMenu }) => {
           </li>
           <li className="five fade-down animate nav-item">
             <Button
-              path="/resume"
-              type="navLink"
+              type="resumeLink"
               name="Resume"
               className="nav-link"
-              onClick={closeMenu}
             />
           </li>
         </ul>

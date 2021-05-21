@@ -16,6 +16,7 @@ export const LANDING_LINK = "landingLink";
 export const LINK_BUTTON = "linkButton";
 export const TAB_LINK = "tabLink";
 export const SEND_FORM = "sendForm";
+export const RESUME_LINK = "resumeLink";
 
 export const PROJECTS = [
   {

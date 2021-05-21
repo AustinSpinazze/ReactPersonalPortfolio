@@ -8,8 +8,10 @@ import {
   LANDING_LINK,
   LINK_BUTTON,
   TAB_LINK,
-  SEND_FORM
+  SEND_FORM,
+  RESUME_LINK
 } from "../../../shared/constants/constants";
+import { RESUME } from "../../../shared/constants/urls";
 import "./button.css";
 
 const Button = (props) => {
@@ -26,9 +28,14 @@ const Button = (props) => {
           exact={props.exact}
           onClick={eventHandler}
         >
-          <i className={props.iconClassName}></i>
           {props.name}
         </Link>
+      );
+    case RESUME_LINK:
+      return (
+        <a href={RESUME} className={props.className}>
+          {props.name}
+        </a>
       );
     case IMAGE_LINK:
       return (

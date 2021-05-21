@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from "react";
 import { BrowserRouter, Redirect, Route } from "react-router-dom";
 import { connect } from "react-redux";
 
-import { initialLoad } from "./redux/Main/main.actions";
+import { initialLoad, closeMenu } from "./redux/Main/main.actions";
 import Loader from "./common/Loaders";
 import Footer from "./Layout/Footer";
 import Navbar from "./Layout/NavBar";
@@ -47,12 +47,14 @@ const App = (props) => {
 const mapStateToProps = (state) => {
   return {
     firstLoad: state.main.firstLoad,
+    toggle: state.main.toggle
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
     initialLoad: () => dispatch(initialLoad()),
+    closeMenu: () => dispatch(closeMenu())
   };
 };
 
