@@ -36,6 +36,10 @@
   border-radius: 25px;
 }
 
+.flip-card-front h1 {
+  margin: 15px 0;
+}
+
 .flip-card-back {
   background-color: white;
   transform: rotateY(180deg);
