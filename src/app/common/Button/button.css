@@ -60,6 +60,7 @@
   background-color: #e85a4f;
   color: white;
   -webkit-appearance: none;
+  cursor: pointer;
 }
 
 .default-button:link,

@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect } from "react";
-import { BrowserRouter, Redirect, Route } from "react-router-dom";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import { connect } from "react-redux";
 
 import { initialLoad, closeMenu } from "./redux/Main/main.actions";
@@ -33,9 +33,11 @@ const App = (props) => {
         <Fragment>
           <Navbar />
           <div className="body-container">
-            <Route path="/" component={LandingPage} exact />
-            <Route path="/contact" component={Contact} />
-            <Redirect to="/" />
+            <Switch>
+              <Route path="/" component={LandingPage} exact />
+              <Route path="/contact" component={Contact} />
+              <Redirect to="/"/>
+            </Switch>
           </div>
           <Footer />
         </Fragment>

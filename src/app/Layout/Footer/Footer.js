@@ -5,7 +5,7 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer-bar">
+    <div className="footer-bar animate fade-up">
       <FooterLinks />
     </div>
   );
