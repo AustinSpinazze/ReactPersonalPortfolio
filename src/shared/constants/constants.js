@@ -57,72 +57,84 @@ export const PROJECTS = [
 ];
 
 export const SKILLS = [
-    {
-        title: "React",
-        level: ["filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "not-filled fa fa-circle-thin"],
-        techIcon: react
-    },
-    {
-        title: "JavaScript",
-        level: ["filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "not-filled fa fa-circle-thin"],
-        techIcon: javascript
-    },
-    {
-        title: "ElectronJS",
-        level: ["filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "not-filled fa fa-circle-thin"],
-        techIcon: electron
-    },
-    {
-        title: "NodeJS",
-        level: ["filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "not-filled fa fa-circle-thin"],
-        techIcon: nodejs
-    },
-    {
-        title: "TypeScript",
-        level: ["filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "not-filled fa fa-circle-thin", "not-filled fa fa-circle-thin"],
-        techIcon: typescript
-    },
-    {
-        title: "ExpressJS",
-        level: ["filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "not-filled fa fa-circle-thin", "not-filled fa fa-circle-thin"],
-    },
-    {
-        title: "Java",
-        level: ["filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "not-filled fa fa-circle-thin", "not-filled fa fa-circle-thin"],
-        techIcon: java
-    },
-    {
-        title: "SpringBoot",
-        level: ["filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "not-filled fa fa-circle-thin", "not-filled fa fa-circle-thin"],
-        techIcon: spring
-    },
+  {
+    title: "React",
+    level: ["filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "not-filled fa fa-circle-thin"],
+    techIcon: react
+  },
+  {
+    title: "JavaScript",
+    level: ["filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "not-filled fa fa-circle-thin"],
+    techIcon: javascript
+  },
+  {
+    title: "ElectronJS",
+    level: ["filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "not-filled fa fa-circle-thin"],
+    techIcon: electron
+  },
+  {
+    title: "NodeJS",
+    level: ["filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "not-filled fa fa-circle-thin"],
+    techIcon: nodejs
+  },
+  {
+    title: "TypeScript",
+    level: ["filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "not-filled fa fa-circle-thin", "not-filled fa fa-circle-thin"],
+    techIcon: typescript
+  },
+  {
+    title: "ExpressJS",
+    level: ["filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "not-filled fa fa-circle-thin", "not-filled fa fa-circle-thin"],
+  },
+  {
+    title: "Java",
+    level: ["filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "not-filled fa fa-circle-thin", "not-filled fa fa-circle-thin"],
+    techIcon: java
+  },
+  {
+    title: "SpringBoot",
+    level: ["filled fa fa-circle", "filled fa fa-circle", "filled fa fa-circle", "not-filled fa fa-circle-thin", "not-filled fa fa-circle-thin"],
+    techIcon: spring
+  },
 ]
 
 export const EXPERIENCE_TABS = [
-    {
-        id: 0,
-        employerName: "Perficient",
-        title: "Technical Consultant",
-        duties: [
-            "Write modern, efficient, maintainable code for a diverse array of enterprise clients and internal projects",
-            "Work with a variety of different languages, frameworks, and libraries such as JavaScript, TypeScript, Java, React, ElectronJS, NodeJS, ExpressJS, and SpringBoot",
-            "Communicate with multi-disciplinary teams of engineers, designers, project managers and clients on a daily basis"
-        ],
-        timePeriod: "January 2020 - Present",
-        employerLink: "https://www.perficient.com/"
-    },
-    {
-        id: 1,
-        employerName: "Agilink LLC",
-        title: "Junior Developer",
-        duties: [
-            "Developed and maintained code for in-house and client websites primarily using Vue, ASP .NET, C#, and JavaScript",
-            "Created UI mockups and wire-frames for clients using Balsamiq and Marvel App",
-            "Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness"
-        ],
-        timePeriod: "January 2019 - December 2019",
-        employerLink: "https://agilink.net/"
-    }
+  {
+    id: 0,
+    employerName: "HubSpot",
+    title: "Technical Consultant",
+    duties: [
+      "Custom design work with HubSpot CMS using ReactJS, VueJS, JavaScript, HubSpot's templating language HubL, HTML and CSS",
+      "Work with customer's development teams to build out custom API integrations for HubSpot's CRM with a multitude of languages and frameworks",
+      "Helped customer's architect their data structures to maximize efficiency and scalability of their business processes within HubSpot"
+    ],
+    timePeriod: "September 2021 - Present",
+    employerLink: "https://www.hubspot.com/"
+  },
+  {
+    id: 1,
+    employerName: "Perficient",
+    title: "Technical Consultant",
+    duties: [
+      "Write modern, efficient, maintainable code for a diverse array of enterprise clients and internal projects",
+      "Work with a variety of different languages, frameworks, and libraries such as JavaScript, TypeScript, Java, React, ElectronJS, NodeJS, ExpressJS, and SpringBoot",
+      "Communicate with multi-disciplinary teams of engineers, designers, project managers and clients on a daily basis"
+    ],
+    timePeriod: "January 2020 - September 2021",
+    employerLink: "https://www.perficient.com/"
+  },
+  {
+    id: 2,
+    employerName: "Agilink LLC",
+    title: "Junior Developer",
+    duties: [
+      "Developed and maintained code for in-house and client websites primarily using Vue, ASP .NET, C#, and JavaScript",
+      "Created UI mockups and wire-frames for clients using Balsamiq and Marvel App",
+      "Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness"
+    ],
+    timePeriod: "January 2019 - December 2019",
+    employerLink: "https://agilink.net/"
+  }
 ]
 
-    
+

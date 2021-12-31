@@ -18,17 +18,17 @@ const Intro = () => {
       <div className="intro-paragraph animate fade-up">
         <p>
           I am a Lafayette-based software engineer who specializes in designing
-          and building full-stack applications. Currently, I am a technical
-          consultant at
-          <a href="https://www.perficient.com/" className="employer-link">
-            {" "}Perficient{" "}
+          and building full-stack applications. Currently, I am a Technical
+          Consultant at
+          <a href="https://www.hubspot.com/" className="employer-link">
+            {" "}HubSpot{" "}
           </a>
-          focused on helping clients build digital solutions that transform how
-          they connect with their customers and grow their business.
+          focused on helping customers build digital solutions that transform how
+          they connect with their customers and scale their business on the HubSpot platform.
         </p>
       </div>
       <div className="intro-button animate fade-up">
-          <Button className="link-button" type="linkButton" path="/contact" name="Get In Touch" />
+        <Button className="link-button" type="linkButton" path="/contact" name="Get In Touch" />
       </div>
     </div>
   );
