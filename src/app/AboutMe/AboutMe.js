@@ -13,7 +13,7 @@ const AboutMe = () => {
           <div>
             <p>
               Hi there! My name is Austin Spinazze. I am an innovative and
-              passionate full-stack developer with two years of experience
+              passionate full-stack developer with three years of experience
               designing and delivering digital experiences and services for
               Fortune 500 and 100 companies. I graduated in 2019 from the
               University of Louisiana at Lafayette with a bachelor's degree in
@@ -29,16 +29,16 @@ const AboutMe = () => {
             </p>
           </div>
           <ul className="skills-list">
-          {SKILLS.map((skill, i) => {
-            return(
-            <li key={i}>
-              <img className="skills-icon" src={skill.techIcon ? skill.techIcon : null} /><span className="skills-list-title">{skill.title}</span>
-                {/* {skill.level.map((className, i) => {
+            {SKILLS.map((skill, i) => {
+              return (
+                <li key={i}>
+                  <img className="skills-icon" src={skill.techIcon ? skill.techIcon : null} /><span className="skills-list-title">{skill.title}</span>
+                  {/* {skill.level.map((className, i) => {
                     return <i className={`${className}`} key={i} />
                     May use this at a later date
                 })} */}
-            </li>);
-          })}
+                </li>);
+            })}
           </ul>
         </div>
         <div className="about-image-wrapper animate fade-up">
